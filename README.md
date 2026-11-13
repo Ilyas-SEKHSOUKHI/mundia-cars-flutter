@@ -10,7 +10,7 @@ Projet réalisé dans le cadre du cours **Développement Mobile (2ACINF)** – U
 ## 📸 Aperçu
 
 <p align="center">
-  <img src="docs/mundiaCars.png" alt="Aperçu de l'application Mundia Cars" width="300">
+  <img src="docs/mundiaCars.png" alt="Aperçu de l'application Mundia Cars" width="500">
 </p>
 
 ## 🎬 Démonstration vidéo
@@ -90,7 +90,7 @@ flutter:
 
 ```bash
 # 1. Cloner le dépôt
-git clone <url-du-depot>
+git clone https://github.com/Ilyas-SEKHSOUKHI/mundia-cars-flutter.git
 cd mundiacar
 
 # 2. Récupérer les dépendances

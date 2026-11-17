@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mundiacar/componnents/mycar.dart';
 
 void main(){
   runApp(MyApp());
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         body: Container(
           child: ListView(
             children: [
-              Container(
+              /*Container(
                 width: 200,
                 height: 200,
                 margin: EdgeInsets.all(10),
@@ -34,41 +35,13 @@ class MyApp extends StatelessWidget {
                   ),
                     image: DecorationImage(image: AssetImage("assets/images/bmw.jpg"),fit: BoxFit.cover)
                 ),
-              ),
+              ),*/
+              // Using functions
+              mycar(txt: "Mundia Car", img: "bmw.jpg", h: 200),
               Row(
                 children: [
-                  Expanded(flex: 1,child: Container(
-                    height: 150,
-                    margin: EdgeInsets.all(10),
-                    padding: EdgeInsets.all(10),
-                    child: Text("Mundia Cars",style: TextStyle(color: Colors.white,fontSize: 20,fontFamily: 'charm'),),
-                    decoration: BoxDecoration(
-                        color: Colors.pinkAccent,
-                        borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(10),
-                          topRight: Radius.circular(10),
-                          bottomLeft: Radius.circular(10),
-                          bottomRight: Radius.circular(10),
-                        ),
-                        image: DecorationImage(image: AssetImage("assets/images/q3.jpg"),fit: BoxFit.cover)
-                    ),
-                  ),),
-                  Expanded(flex: 1,child: Container(
-                    height: 150,
-                    margin: EdgeInsets.all(10),
-                    padding: EdgeInsets.all(10),
-                    child: Text("Mundia Cars",style: TextStyle(color: Colors.white,fontSize: 20,fontFamily: 'charm'),),
-                    decoration: BoxDecoration(
-                        color: Colors.pinkAccent,
-                        borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(10),
-                          topRight: Radius.circular(10),
-                          bottomLeft: Radius.circular(10),
-                          bottomRight: Radius.circular(10),
-                        ),
-                        image: DecorationImage(image: AssetImage("assets/images/peugot.jpg"),fit: BoxFit.cover)
-                    ),
-                  ),)
+                  Expanded(flex: 1,child: mycar(txt: "Mundia Car", img: "q3.jpg", h: 150),),
+                  Expanded(flex: 1,child: mycar(txt: "Mundia Car", img: "peugot.jpg", h: 150),)
                 ],
               ),
               Container(
